@@ -20,7 +20,7 @@ openHackClient();
 
 
 
-dragElement(document.getElementById("hackClientWindow"));
+dragElement(document.getElementById("webHackClientWindow"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
