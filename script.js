@@ -12,7 +12,7 @@ function openHackClient() {
         hackWindow.innerHTML = "<div id='webHackClientWindow-header' style='width: 100%;height: 25px; background: #828282;'></div><div id='webHackClientContentContainer'></div>";
         hackWindowContents.innerHTML = "<h1>hi</h1>";
         document.body.appendChild(hackWindow);
-        document.body.getElementById("webHackClientContentContainer").appendChild(hackWindowContents);
+        document.getElementById("webHackClientContentContainer").appendChild(hackWindowContents);
 };
 
 openHackClient();
