@@ -3,6 +3,23 @@
 
 
 
+function openHackClient() {
+        hackWindow = document.createElement('div');
+        hackWindowContents = document.createElement('div');
+        hackWindowContents.style="min-width: 100px;min-height: 100px;display: grid;"
+        hackWindow.id = "webHackClientWindow";
+        hackWindow.style = "min-width: 100px;min-height:100px;position: absolute;border-raduis: 5px;border: solid;border: #FFF;border-width: 2px;place-items: center;";
+        hackWindow.innerHTML = "<div id='webHackClientWindow-header' style='width: 100%;height: 25px; background: #828282;'></div><div id='webHackClientContentContainer'></div>";
+        hackWindowContents.innerHTML = "<h1>hi</h1>";
+        document.body.appendChild(hackWindow);
+        document.body.getElementById("webHackClientContentContainer").appendChild(hackWindowContents);
+};
+
+openHackClient();
+
+
+
+
 dragElement(document.getElementById("hackClientWindow"));
 
 function dragElement(elmnt) {
@@ -45,21 +62,3 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 };
-
-
-
-
-
-function openHackClient() {
-        hackWindow = document.createElement('div');
-        hackWindowContents = document.createElement('div');
-        hackWindowContents.style="min-width: 100px;min-height: 100px;display: grid;"
-        hackWindow.id = "webHackClientWindow";
-        hackWindow.style = "min-width: 100px;min-height:100px;position: absolute;border-raduis: 5px;border: solid;border: #FFF;border-width: 2px;place-items: center;";
-        hackWindow.innerHTML = "<div id='webHackClientWindow-header' style='width: 100%;height: 25px; background: #828282;'></div><div id='webHackClientContentContainer'></div>";
-        hackWindowContents.innerHTML = "<h1>hi</h1>";
-        document.body.appendChild(hackWindow);
-        document.body.getElementById("webHackClientContentContainer").appendChild(hackWindowContents);
-};
-
-openHackClient();
