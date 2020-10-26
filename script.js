@@ -2,7 +2,7 @@
 //command dev code: (copy and paste all the code below into the console to get the final result)
 
 
-var windowContent = '<div><div id="page hacks" style="display: inline-block; place-items:center; background: #cfcfcf;"><p>Page Changing Hacks:</p><input type="button" value="Dark Page Background" onclick="pageDark()"></input></div><div id="membean hacks" style="display: inline-block; place-items:center; background: #cfcfcf;"><p>Membean Hacks:</p><input type="button" value="Answer Correct" onclick="passMembean()"></input><input type="button" value="Stop Countdown Timer" onclick="stopClockMembean()"></input></div></div>'
+var windowContent = '<div style="display: grid; place-items: center; row-gap: 5px;column-gap: 5px;"><div id="page hacks" style="display: inline-block; place-items:center; background: #cfcfcf;"><p>Page Changing Hacks:</p><input type="button" value="Dark Page Background" onclick="pageDark()"></input></div><div id="membean hacks" style="display: inline-block; place-items:center; background: #cfcfcf;"><p>Membean Hacks:</p><input type="button" value="Answer Correct" onclick="passMembean()"></input><input type="button" value="Stop Countdown Timer" onclick="stopClockMembean()"></input></div></div>';
 
 function openHackClient() {
         if(document.getElementById("webHackClientWindow")) {return;} else {
