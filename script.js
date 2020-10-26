@@ -12,7 +12,8 @@ function openHackClient() {
                 hackWindow.id = "webHackClientWindow";
                 hackWindow.style = "z-index: 9999;min-width: 100px;min-height:100px;position: absolute;top: 10px;left: 10px;border-radius: 5px;border: solid;border-color:black;border-width: 2px;background:#fff;place-items: center;";
                 hackWindow.innerHTML = "<div id='webHackClientWindow-header' style='cursor:move;width: 100%;min-height: 25px; background: #828282;place-items:center;display: grid;padding:5px;'><input type='button' style='width: 30px; height: 100%; background-color: red;border-radius:5px;padding:2px;outline:none;border:none;display: inline-block;cursor:pointer;' onclick='killWebHacksClientWindow()' value='X'><h2 style='display: inline-block;'>WebHack Client V1.0</h2><p>Created by: Gavin Grajkowski</p></div><div id='webHackClientContentContainer' style='display: grid; row-gap:5px;'></div>";
-                hackWindowContents.innerHTML = URL('webHackClientHtml.js');
+                var hackWindowContentFile = requrie("webHackClientHtml.txt");
+                hackWindowContents.innerHTML = hackWindowContentFile.toString();
                 document.body.appendChild(hackWindow);
                 document.getElementById("webHackClientContentContainer").appendChild(hackWindowContents);
         }
@@ -24,11 +25,16 @@ openHackClient();
 function killWebHacksClientWindow() {
         document.getElementById("webHackClientWindow").remove();
 };
+//page changers
+function pageDark() {
+        document.body.style='background:#292a2d';
+};
+//membean:
 function passMembean() {
         document.getElementById('pass').click();
 };
-function pageDark() {
-        document.body.style='background:#292a2d';
+function stopClockMembean() {
+
 };
 
 
